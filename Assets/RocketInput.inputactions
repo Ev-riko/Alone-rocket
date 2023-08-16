@@ -1,0 +1,56 @@
+{
+    "name": "RocketInput",
+    "maps": [
+        {
+            "name": "Rocket",
+            "id": "07150956-ea64-4724-9ac2-d26b6c4cae14",
+            "actions": [
+                {
+                    "name": "fly",
+                    "type": "Value",
+                    "id": "ec50541c-39a4-430c-af85-a332775a112e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "93d31fae-faa2-4ddf-87d2-9187394b2097",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "fly",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "effd9bd9-46f3-4bf0-b75e-43d51a0790fb",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "fly",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "ef6d9758-31b5-4877-a9aa-97f33b421aa0",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "fly",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
