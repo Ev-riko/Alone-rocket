@@ -29,7 +29,7 @@ public class Rocket : MonoBehaviour
     void FixedUpdate()
     {
         _rigidbody2D.velocity += _direction * _speed;
-        _rigidbody2D.rotation = Mathf.Lerp(_rigidbody2D.rotation, _rigidbody2D.velocity.y * 10, 10);
+        _rigidbody2D.rotation = _rigidbody2D.velocity.y * 10;
     }
 
     public void SetDirectoin(Vector2 direction)
