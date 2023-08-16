@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EnterCollisionComponent : MonoBehaviour
+public class EnterTriggerComponent : MonoBehaviour
 {
     [SerializeField] private UnityEvent _action;
     [SerializeField] private string _tag;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag(_tag))
         {

@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 8410009098152670137}
   - component: {fileID: 3782718943155767706}
   - component: {fileID: 4865811441434207377}
+  - component: {fileID: -6558119944926100767}
+  - component: {fileID: -5701831283147783013}
+  - component: {fileID: -2787806793510166470}
   m_Layer: 0
   m_Name: Comets_1
   m_TagString: Untagged
@@ -140,3 +143,74 @@ PolygonCollider2D:
       - {x: 0.4658985, y: -0.24850267}
       - {x: 0.45572662, y: -0.036513567}
   m_UseDelaunayMesh: 0
+--- !u!114 &-6558119944926100767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5490166593051983462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7cfd624567ec94bbba20be3a1b7ede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -2787806793510166470}
+        m_TargetAssemblyTypeName: Assets.AloneRocket.Components.DestroyComponent,
+          Assembly-CSharp
+        m_MethodName: DestroyObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _speed: 5
+  _deadZone: -25
+--- !u!114 &-5701831283147783013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5490166593051983462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27981a80fe009d4b9434f59a77128e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6296893189562340735, guid: 27ad7420ac4aa524980befa75147d4fa, type: 3}
+        m_TargetAssemblyTypeName: Assets.AloneRocket.Components.RealoadSceneComponent,
+          Assembly-CSharp
+        m_MethodName: RealoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _tag: Player
+--- !u!114 &-2787806793510166470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5490166593051983462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 080e94fcaf1159a45a4cc32a26e764b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
