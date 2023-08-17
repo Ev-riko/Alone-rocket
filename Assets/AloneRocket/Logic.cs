@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +12,18 @@ public class Logic : MonoBehaviour
 
     private void Awake()
     {
+        PauseGame();
         _rocket = FindAnyObjectByType<Rocket>();
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void PlayGame()
+    {
+        Time.timeScale = 1f;
     }
 
     private void Update()

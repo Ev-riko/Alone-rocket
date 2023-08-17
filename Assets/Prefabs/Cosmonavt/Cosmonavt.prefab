@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2607223063725651533}
   - component: {fileID: 1975952575472925780}
   - component: {fileID: 681290335296627062}
+  - component: {fileID: -3638285305686929813}
   m_Layer: 0
   m_Name: Cosmonavt
   m_TagString: Untagged
@@ -219,5 +220,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14bbe24adec0f642b357477ed4d4c22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rocket: {fileID: 2788410172784380930, guid: 03ee9879b20a6a744b392ed2ec37a7a7, type: 3}
-  _magnetismPower: 0
+  _magnetismPower: 3
+  _magnetismRadius: 1.5
+--- !u!95 &-3638285305686929813
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910908476970127774}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fd889e8627886a04ba752c3f5f7070df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
